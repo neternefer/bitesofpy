@@ -1,27 +1,9 @@
-games_won = dict(sara=0, bob=1, tim=5, julian=3, jim=1)
+1. Create local dir and git init
+2. Create github repo, no readme/license
+3. Write code, add, commit (double quotes on Windows)
+4. Add remote repo - git add origin <http address>
+5. Push changes to remote repo - git push -u origin master
+6. Check for updates before pushing - git pull origin master
+7. Push changes - git push origin master
 
-
-def print_game_stats(games_won=games_won):
-    """Loop through games_won's dict (key, value) pairs (dict.items)
-       printing (print, not return) how many games each person has won,
-       pluralize 'game' based on number.
-
-       Expected output (ignore the docstring's indentation):
-
-       sara has won 0 games
-       bob has won 1 game
-       tim has won 5 games
-       julian has won 3 games
-       jim has won 1 game
-
-       (Note that as of Python 3.7 - which we're using atm - dict insert order is retained
-        so no sorting is required for this Bite.)
-    """
-    for player, score in games_won.items():
-        plural = ''
-        if score == 1:
-            plural = 'game'
-        else:
-            plural = 'games'
-        print(f'{player} has won {score} {plural}')
             
