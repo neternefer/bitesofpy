@@ -15,6 +15,4 @@ def enumerate_names_countries():
     
     for num, (name, country) in one:
         print(f'{num}. {name:<11}{country}')
-        
-    
-   
+ 

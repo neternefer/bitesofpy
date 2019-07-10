@@ -7,4 +7,4 @@ def rotate(string, n):
        e.g.: rotate('hello', -2) would return lohel
     """
     return (string[n:] + string[:n]
-    
+

@@ -20,3 +20,4 @@ past_time = NOW - timedelta(seconds=3)
 twitter_promo = Promo('twitter', past_time)
 print(twitter_promo.expired)
    
+
